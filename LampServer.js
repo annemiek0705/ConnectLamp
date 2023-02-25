@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 8000
-let clientA, clientB;
+let clientA = false;
+let clientB = false;
 
 app.get('/specialState', (req, res) => {
 	let response="";
