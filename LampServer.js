@@ -9,8 +9,8 @@ let state = {
 	"B": false,
 };
 
-app.get('/special', (req, res) => {
-	res.send( state["A"] && state["B"] )
+app.get('/', (req, res) => {
+	res.send(state)
 })
 
 app.post('/client', (req, res) => {
