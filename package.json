@@ -4,6 +4,7 @@
   "description": "",
   "main": "LampServer.js",
   "scripts": {
+    "start": "node LampServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/annemiek0705/ConnectLamp/issues"
   },
-  "homepage": "https://github.com/annemiek0705/ConnectLamp#readme"
+  "homepage": "https://github.com/annemiek0705/ConnectLamp#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

@@ -1,11 +1,11 @@
-const { Console } = require('console');
-var http = require('http');
-const { createSecureContext } = require('tls');
+const express = require('express')
+const app = express()
+const port = 8000
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
 
-http.createServer(function(req, res){
-	res.writeHead(200, {'Content-Type' : 'text/html'});
-	res.write(req.url);
-	res.write('The date and time currently are: ' );
-	res.end();	
-}).listen(8000)
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
