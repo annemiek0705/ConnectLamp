@@ -1,0 +1,19 @@
+{
+  "name": "connectlamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "LampServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annemiek0705/ConnectLamp.git"
+  },
+  "author": "Annemiek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annemiek0705/ConnectLamp/issues"
+  },
+  "homepage": "https://github.com/annemiek0705/ConnectLamp#readme"
+}
