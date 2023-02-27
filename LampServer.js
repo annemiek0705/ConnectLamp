@@ -20,12 +20,13 @@ app.get('/', (req, res) => {
 	}else if(state["A"] && state["B"]){
 		response = 3;
 	}
-	res.send(response)
+	res.send({status: response})
 })
 
 app.post('/client', (req, res) => {
 	let data = req.body;
 	state[data.id] = data.state;
+	console.log(state);
 	res.sendStatus(200)
 	return;
 })
