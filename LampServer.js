@@ -10,7 +10,17 @@ let state = {
 };
 
 app.get('/', (req, res) => {
-	res.send(state)
+	let response;
+	if(!state["A"] && !state["B"]){
+		response = 0;
+	}else if(!state["A"] && state["B"]){
+		response = 1;
+	}else if(state["A"] && !state["B"]){
+		response = 2;
+	}else if(state["A"] && state["B"]){
+		response = 3;
+	}
+	res.send(response)
 })
 
 app.post('/client', (req, res) => {
